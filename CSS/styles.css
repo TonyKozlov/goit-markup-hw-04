@@ -20,11 +20,13 @@
 /* utilities */
 
 .container {
-  margin-right: auto;
+  margin-left: 200px;
+  margin-right: 200px;
   margin-top: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  justify-content: center;
 }
 
 .list {
@@ -73,9 +75,6 @@ header {
   top: 32px;
 
   background-color: var(--primary-bg-color);
-
-  border-color: #ececec;
-  border-bottom: 1px;
 }
 
 header .main {
@@ -160,10 +159,31 @@ header .element:not(:last-child) {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  height: 600px;
+  width: 1600px;
+  margin-left: 0;
+  margin-right: 0;
+
+  background-image: url(../images/Img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   background-color: #2f303a;
 
   text-align: center;
+}
+
+.overlay {
+  height: 600px;
+  width: 1600px;
+  margin-left: 0;
+  margin-right: 0;
+
+  background-image: url(../images/Img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
