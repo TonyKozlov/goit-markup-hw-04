@@ -20,12 +20,13 @@
 /* utilities */
 
 .container {
-  margin-left: 200px;
-  margin-right: 200px;
   margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  align-items: center;
   justify-content: center;
 }
 
@@ -36,7 +37,20 @@
   display: flex;
 }
 
+main {
+  align-items: center;
+  justify-content: center;
+
+}
+
 /* sections */
+
+section {
+  max-width: 1600px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
 
 .section-title {
   margin-top: 0;
@@ -52,6 +66,7 @@
 
 body {
   margin: auto;
+  max-width: 1600px;
 
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -61,6 +76,8 @@ body {
   line-height: 1.71;
   left: 0;
   top: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 body a {
@@ -73,8 +90,13 @@ header {
   padding-top: 24px;
   padding-bottom: 25px;
   top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 
   background-color: var(--primary-bg-color);
+  border-bottom: 1px solid #ececec;
 }
 
 header .main {
@@ -114,8 +136,6 @@ header .element:not(:last-child) {
 
 .site-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--title-text-color);
 
@@ -139,8 +159,6 @@ header .element:not(:last-child) {
 
 .contacts {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--primary-text-color);
 
@@ -159,36 +177,23 @@ header .element:not(:last-child) {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  height: 600px;
-  width: 1600px;
-  margin-left: 0;
-  margin-right: 0;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-image: url(../images/Img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   background-color: #2f303a;
 
   text-align: center;
-}
-
-.overlay {
-  height: 600px;
-  width: 1600px;
-  margin-left: 0;
-  margin-right: 0;
-
-  background-image: url(../images/Img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 30px;
 
   color: var(--secondary-title-color);
 
@@ -258,6 +263,14 @@ header .element:not(:last-child) {
   margin-bottom: 0;
 }
 
+.image {
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+
 /*about us*/
 
 .about {
@@ -274,6 +287,11 @@ header .element:not(:last-child) {
   margin-right: 30px;
 }
 
+.box {
+  width: 370px;
+  height: 294px;
+}
+
 /* team */
 
 .section.team {
@@ -284,16 +302,30 @@ header .element:not(:last-child) {
   background-color: var(--secondary-bg-color);
 }
 
+.section.team .item {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.employer {
+  width: 270px;
+  height: 260px;
+}
+
+.name {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .section.team .section-title {
   margin-bottom: 50px;
 }
 
 .section.team .item:not(:last-child) {
   margin-right: 30px;
-}
-
-.team-list img {
-  margin-bottom: 30px;
 }
 
 .team-list .title {
@@ -315,17 +347,60 @@ header .element:not(:last-child) {
   line-height: 1.19;
 }
 
+/* employers*/
+
+.employers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  text-align: center;
+  align-items: center;
+}
+
+.employers h2 {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.employers .item {
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.employers .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 footer .container {
-  display: inline;
+  display: flex;
+  align-items: baseline;
+}
+
+.down {
+  padding-top: 60px;
+  padding-bottom: 60px;
+ 
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  max-width: 1600px;
 
   background-color: #2f303a;
   margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 footer .logotext {
@@ -337,6 +412,8 @@ footer .logotext {
 }
 
 .location {
+  margin-top: 0px;
+  margin-bottom: 9px;
   color: #ffffff;
 
   font-style: normal;
@@ -345,22 +422,58 @@ footer .logotext {
   text-decoration: none;
 }
 
+address {
+  margin-top: 20px;
+}
+
+address .list {
+  display: inline;
+}
+
+address .element:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 address a {
   color: rgba(255, 255, 255, 0.6);
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  margin-right: 0;
+}
+
+.join h3 {
+  margin-top: 0;
+
+  color: var(--secondary-title-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.join {
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: 70px;
+  justify-content: center;
 }
 
 /* portfolio */
 
 .filters {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  justify-content: center;
+}
+
+.filters .list {
   justify-content: center;
 }
 
@@ -375,11 +488,13 @@ address a {
   padding: 6px 22px;
   min-width: 73px;
   height: 38px;
-  margin-bottom: 50px;
 
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
   text-align: center;
 }
 
@@ -390,19 +505,15 @@ address a {
 }
 
 .projects.list {
+  margin-top: 50px;
   flex-wrap: wrap;
-}
-
-.projects img {
-  margin-bottom: 20px;
 }
 
 .projects .title {
   width: 322px;
   margin-left: 24px;
   margin-top: 0px;
-  margin-bottom: 4px;
-
+  margin-bottom: 0px;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -410,11 +521,16 @@ address a {
   line-height: 2;
 }
 
+.card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .projects p {
   width: 322px;
   margin-left: 24px;
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin-top: 4px;
+  margin-bottom: 0px;
 
   font-size: 16px;
   line-height: 1.87;
@@ -424,6 +540,14 @@ address a {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+.projects .item:hover,
+.projects .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects .item:nth-child(3n) {
