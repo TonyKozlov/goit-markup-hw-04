@@ -266,6 +266,8 @@ header .element:not(:last-child) {
 .image {
   height: 120px;
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -341,7 +343,7 @@ header .element:not(:last-child) {
 
 .profession {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -363,17 +365,31 @@ header .element:not(:last-child) {
 }
 
 .employers .item {
+  display: flex;
   width: 170px;
   height: 90px;
 
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 .employers .item:not(:last-child) {
   margin-right: 30px;
 }
+
+.socnetwork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socnetwork.list .item:not(:last-child) {
+  margin-right: 10px;
+}
+
 
 footer .container {
   display: flex;
